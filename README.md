@@ -17,13 +17,13 @@ Three components are used in this project- ThemeToggle, Gallery and SearchForm. 
 
 useContext is a React Hook that lets you read and subscribe to context from your component.
 
-### create Context Hook
+#### create Context Hook
 
 [createContext](https://react.dev/reference/react/createContext)
 
 createContext lets you create a context that components can provide or read.
 
-####Context Setup with custom hook
+##### Context Setup with custom hook
 
 ```js
  import {createContext, useContext} from 'react'
@@ -35,6 +35,6 @@ createContext lets you create a context that components can provide or read.
         <AppContext.Provider/>
     )
  }
- export const useGlobalContext = () => useContect(AppContext);
+ export const useGlobalContext = () => useContext(AppContext);
 
 ```
